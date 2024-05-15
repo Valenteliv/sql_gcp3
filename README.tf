@@ -8,7 +8,6 @@ provider "google" {
 resource "google_sql_database_instance" "my_instance" {
   name = "my-cloud-sql-instance"
   database_version = "POSTGRES_14" # Reemplaza con la versión deseada (MySQL o PostgreSQL)
-  region  = google.region.self  # Hereda la región del provider
 
   # Configuración de la base de datos
   settings {

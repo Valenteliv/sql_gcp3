@@ -12,7 +12,6 @@ resource "google_sql_database_instance" "my_instance" {
   # Configuración de la base de datos
   settings {
     tier = "db-f1-micro" # Nivel de la máquina
-    storage_auto_grow = 10  # GB de almacenamiento automático
     activation_policy = "ALWAYS"
   }
 
